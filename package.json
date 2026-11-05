@@ -1,0 +1,12 @@
+{
+  "name": "sheikhsohel-com",
+  "version": "1.0.0",
+  "description": "Sheikh Sohel - Motion Graphics Designer & Logo Animation Studio",
+  "private": true,
+  "scripts": {
+    "build": "node build.js"
+  },
+  "keywords": [],
+  "author": "Sheikh Sohel",
+  "license": "ISC"
+}
