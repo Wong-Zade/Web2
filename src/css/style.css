@@ -6,11 +6,11 @@
   --bg-card-alt: #1a1a1a;
   --bg-surface: #212121;
   --bg-surface-light: #2c2c2e;
-  --accent-cyan: #00f7ff;
-  --accent-cyan-hover: #00d9e0;
+  --accent-cyan: #a855f7;
+  --accent-cyan-hover: #9333ea;
   --accent-red: #e11d48;
-  --accent-purple: #7c3aed;
-  --accent-purple-glow: rgba(124, 58, 237, 0.35);
+  --accent-purple: #a855f7;
+  --accent-purple-glow: rgba(168, 85, 247, 0.35);
   --accent-orange: #ff8a00;
   --accent-green: #84cc16;
   --text-white: #ffffff;

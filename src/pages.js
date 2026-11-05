@@ -61,7 +61,7 @@ function getHomePage(basePath = './') {
 
     <div class="hero-visual">
       <div class="hero-emblem">
-        <span class="emblem-symbol">SS</span>
+        <span class="emblem-symbol">SW</span>
       </div>
     </div>
   </div>
@@ -133,8 +133,8 @@ function getHomePage(basePath = './') {
       <div class="service-card">
         <div class="service-preview-box">
           <div class="preview-grid-bg"></div>
-          <div style="position: relative; z-index: 2; width: 64px; height: 64px; border-radius: 50%; background: #000; display: flex; align-items: center; justify-content: center; color: #00f7ff; font-weight: 800; font-size: 24px;">
-            S
+          <div style="position: relative; z-index: 2; width: 64px; height: 64px; border-radius: 50%; background: #000; display: flex; align-items: center; justify-content: center; color: #a855f7; font-weight: 800; font-size: 24px;">
+            W
           </div>
         </div>
         <div class="service-body">
@@ -150,8 +150,8 @@ function getHomePage(basePath = './') {
         <div class="service-preview-box">
           <div class="preview-grid-bg"></div>
           <div style="position: relative; z-index: 2; display: flex; align-items: center; gap: 4px;">
-            <span style="font-family: 'Wix Madefor Display', sans-serif; font-size: 40px; font-weight: 900; color: #000;">S</span>
-            <span style="font-family: 'Wix Madefor Display', sans-serif; font-size: 40px; font-weight: 900; color: #ef4444;">S</span>
+            <span style="font-family: 'Wix Madefor Display', sans-serif; font-size: 40px; font-weight: 900; color: #000;">W</span>
+            <span style="font-family: 'Wix Madefor Display', sans-serif; font-size: 40px; font-weight: 900; color: #ef4444;">W</span>
           </div>
         </div>
         <div class="service-body">
@@ -167,7 +167,7 @@ function getHomePage(basePath = './') {
         <div class="service-preview-box">
           <div class="preview-grid-bg"></div>
           <div style="position: relative; z-index: 2; font-family: 'Wix Madefor Display', sans-serif; font-size: 38px; font-weight: 900; color: #ef4444; letter-spacing: -2px;">
-            SS
+            SW
           </div>
         </div>
         <div class="service-body">
@@ -313,7 +313,7 @@ function getHomePage(basePath = './') {
 `;
 
   return renderDoc({
-    title: 'Sheikh Sohel - Motion Graphics Designer',
+    title: 'StudioWongs - Motion Graphics Designer',
     activePage: 'home',
     basePath,
     content
@@ -332,8 +332,8 @@ function getServicesPage(basePath = '../') {
       <div class="service-card">
         <div class="service-preview-box">
           <div class="preview-grid-bg"></div>
-          <div style="position: relative; z-index: 2; width: 64px; height: 64px; border-radius: 50%; background: #000; display: flex; align-items: center; justify-content: center; color: #00f7ff; font-weight: 800; font-size: 24px;">
-            S
+          <div style="position: relative; z-index: 2; width: 64px; height: 64px; border-radius: 50%; background: #000; display: flex; align-items: center; justify-content: center; color: #a855f7; font-weight: 800; font-size: 24px;">
+            W
           </div>
         </div>
         <div class="service-body">
@@ -349,8 +349,8 @@ function getServicesPage(basePath = '../') {
         <div class="service-preview-box">
           <div class="preview-grid-bg"></div>
           <div style="position: relative; z-index: 2; display: flex; align-items: center; gap: 4px;">
-            <span style="font-family: 'Wix Madefor Display', sans-serif; font-size: 40px; font-weight: 900; color: #000;">S</span>
-            <span style="font-family: 'Wix Madefor Display', sans-serif; font-size: 40px; font-weight: 900; color: #ef4444;">S</span>
+            <span style="font-family: 'Wix Madefor Display', sans-serif; font-size: 40px; font-weight: 900; color: #000;">W</span>
+            <span style="font-family: 'Wix Madefor Display', sans-serif; font-size: 40px; font-weight: 900; color: #ef4444;">W</span>
           </div>
         </div>
         <div class="service-body">
@@ -366,7 +366,7 @@ function getServicesPage(basePath = '../') {
         <div class="service-preview-box">
           <div class="preview-grid-bg"></div>
           <div style="position: relative; z-index: 2; font-family: 'Wix Madefor Display', sans-serif; font-size: 38px; font-weight: 900; color: #ef4444; letter-spacing: -2px;">
-            SS
+            SW
           </div>
         </div>
         <div class="service-body">
@@ -382,7 +382,7 @@ function getServicesPage(basePath = '../') {
 `;
 
   return renderDoc({
-    title: 'Services | sheikh sohel',
+    title: 'Services | StudioWongs',
     activePage: 'services',
     basePath,
     content
@@ -675,7 +675,7 @@ function getLogoDesignPage(basePath = '../') {
 `;
 
   return renderDoc({
-    title: 'Logo Design Service | Sheikh Sohel',
+    title: 'Logo Design Service | StudioWongs',
     activePage: 'logo-design',
     pageType: 'logo-design',
     basePath,
@@ -920,7 +920,7 @@ function getLogoAnimationPage(basePath = '../') {
 `;
 
   return renderDoc({
-    title: 'Logo Animation Service | Sheikh Sohel',
+    title: 'Logo Animation Service | StudioWongs',
     activePage: 'logo-animation',
     pageType: 'logo-animation',
     basePath,

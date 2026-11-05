@@ -1,9 +1,7 @@
 // Shared templates and SVG assets
 
-const logoSvg = (size = 28) => `
-<svg class="logo-icon" width="${size}" height="${size}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M19 2L5 17H16L13 30L27 15H16L19 2Z" fill="#FFFFFF"/>
-</svg>
+const logoSvg = (size = 28, basePath = './') => `
+<img class="logo-icon" src="${basePath}images/logo.png" width="${size}" height="${size}" alt="StudioWongs Logo" style="border-radius: 8px;" />
 `;
 
 const portfolioLogos = {
@@ -26,7 +24,7 @@ const portfolioLogos = {
 <div style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #ffffff; border-radius: 8px; padding: 20px;">
   <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
     <path d="M10 8H20C24.4 8 28 11.6 28 16C28 20.4 24.4 24 20 24H10V8Z" stroke="#0f172a" stroke-width="4"/>
-    <rect x="18" y="14" width="6" height="12" rx="2" fill="#00f7ff"/>
+    <rect x="18" y="14" width="6" height="12" rx="2" fill="#a855f7"/>
   </svg>
   <span style="font-family: 'Wix Madefor Display', sans-serif; font-size: 15px; font-weight: 800; letter-spacing: 2px; color: #0f172a; margin-top: 8px;">DEFLOCK</span>
 </div>`,
@@ -131,9 +129,9 @@ function renderHeader(activePage = 'home', basePath = './') {
   return `
 <header class="site-header">
   <div class="container nav-container">
-    <a href="${basePath}" class="logo-link" aria-label="Sheikh Sohel Homepage">
-      ${logoSvg(28)}
-      <span class="sr-only">Sheikh Sohel</span>
+    <a href="${basePath}" class="logo-link" aria-label="StudioWongs Homepage">
+      ${logoSvg(28, basePath)}
+      <span class="sr-only">StudioWongs</span>
     </a>
 
     <nav class="nav-desktop" aria-label="Main Navigation">
@@ -180,7 +178,7 @@ function renderHeader(activePage = 'home', basePath = './') {
 <div class="mobile-nav-overlay" aria-label="Mobile Navigation Menu">
   <div class="mobile-nav-header">
     <a href="${basePath}" class="logo-link">
-      ${logoSvg(32)}
+      ${logoSvg(32, basePath)}
     </a>
     <button class="mobile-close-btn" type="button" aria-label="Close Menu">✕</button>
   </div>
@@ -210,10 +208,10 @@ function renderFooter(basePath = './') {
     <div class="footer-grid">
       <!-- Brand column -->
       <div class="footer-brand">
-        ${logoSvg(42)}
+        ${logoSvg(42, basePath)}
         <div class="footer-brand-title">
-          <div>sheikh</div>
-          <div>sohel</div>
+          <div>studio</div>
+          <div>wongs</div>
         </div>
       </div>
 
@@ -250,7 +248,7 @@ function renderFooter(basePath = './') {
     </div>
 
     <div class="copyright-bar">
-      Copyright © 2026 sheikh sohel · All Rights Reserved.
+      Copyright © 2026 StudioWongs · All Rights Reserved.
     </div>
   </div>
 </footer>

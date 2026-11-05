@@ -24,6 +24,7 @@ function build() {
   ensureDir(distDir);
   ensureDir(path.join(distDir, 'css'));
   ensureDir(path.join(distDir, 'js'));
+  ensureDir(path.join(distDir, 'images'));
   ensureDir(path.join(distDir, 'services'));
   ensureDir(path.join(distDir, 'logo-design'));
   ensureDir(path.join(distDir, 'logo-animation'));
@@ -35,6 +36,18 @@ function build() {
 
   const jsSource = fs.readFileSync(path.join(__dirname, 'src', 'js', 'main.js'), 'utf8');
   fs.writeFileSync(path.join(distDir, 'js', 'main.js'), jsSource, 'utf8');
+
+  // Copy images
+  const imagesSourceDir = path.join(__dirname, 'src', 'images');
+  const imagesDestDir = path.join(distDir, 'images');
+  if (fs.existsSync(imagesSourceDir)) {
+    const imageFiles = fs.readdirSync(imagesSourceDir);
+    imageFiles.forEach(file => {
+      const srcPath = path.join(imagesSourceDir, file);
+      const destPath = path.join(imagesDestDir, file);
+      fs.copyFileSync(srcPath, destPath);
+    });
+  }
 
   // 3. Build HTML pages
   // Homepage
@@ -74,7 +87,8 @@ function build() {
     'portfolio/index.html',
     'portfolio.html',
     'css/style.css',
-    'js/main.js'
+    'js/main.js',
+    'images/logo.png'
   ];
   for (const f of files) {
     const p = path.join(distDir, f);
