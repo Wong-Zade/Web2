@@ -1,6 +1,6 @@
-# Sheikh Sohel - Motion Graphics & Logo Design Studio
+# StudioWongs - Motion Graphics & Logo Design Studio
 
-A clean, responsive static website recreated and organized for easy customization and GitHub publishing.
+A clean, responsive static website for StudioWongs - Motion Graphics & Logo Design Studio.
 
 ## 🚀 How to Publish to GitHub (GitHub Pages)
 
